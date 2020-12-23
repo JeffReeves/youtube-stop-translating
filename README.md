@@ -1,4 +1,15 @@
-# YoutubeAutotranslateCanceler
+# YouTube Stop Translating
+
+A userscript (Tampermonkey / Greasemonkey) that stops YouTube from translating video titles in foreign languages into your native language. 
+
+For example, Japanese video titles do not autotranslate to English.
+
+Forked from [pcouy's "YouTubeAutotranslateCanceler"](https://github.com/pcouy/YoutubeAutotranslateCanceler) under the MIT license.
+
+![YouTube Stop Translating](assets/YouTube-Stop-Translating.png)
+
+
+## From Original README
 
 > An API Client may provide an option to translate a video title to other languages. However, the API Client must not add any such translations without the user's consent. In addition, if the API Client's default behavior is to enable the option to translate the video title, it must clearly present to the user an easy way to disable that behavior.  
 > -- From https://developers.google.com/youtube/terms/developer-policies
@@ -6,13 +17,13 @@
 
 I was annoyed by YouTube changing video titles to poorly auto-translated versions, so I made this script using YouTube Data API to retrive original titles and change them back.
 
-# How to use
+### How to use
 
 First, you need a userscript extension, such as Tampermonkey for [Chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) or [Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/). Next, click [here](https://github.com/pcouy/YoutubeAutotranslateCanceler/raw/master/AntiTranslate.user.js) to install the userscript.
 
 Unfortunately, this requires an API key to work. However, requests to this API are free. 
 
-### Instructions on how to get an API key
+#### Instructions on how to get an API key
 
 Detailed instructions and screenshots are provided below
 

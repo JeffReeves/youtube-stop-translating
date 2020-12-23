@@ -60,13 +60,9 @@ from the dropdown menu.
 1. Add the browser extension / plugin ["Tampermonkey"](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) (Chrome/Chromium/Edge)
 or ["Greasemonkey"](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) (Firefox) to your browser.
 
-2. Open the plugin and select the option to create a "new userscript".
+2. Click  [YouTubeStopTranslating.user.js](https://gitlab.com/JeffReeves/youtube-stop-translating/-/raw/master/YouTubeStopTranslating.user.js) to add this userscript to the plugin (or, alternatively, just copy the [YouTubeStopTranslating.user.js](YouTubeStopTranslating.user.js) file's contents into a new userscript).
 
-3. Copy the contents of the [YouTubeStopTranslating.user.js](YouTubeStopTranslating.user.js) file into the new usersrcipt.
-
-4. Save the userscript.
-
-5. Open YouTube and paste in your YouTube API key when prompted.
+3. Open YouTube and paste in your YouTube API key when prompted.
 
 
 ### Screenshots

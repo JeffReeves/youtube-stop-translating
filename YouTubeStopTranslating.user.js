@@ -1,10 +1,10 @@
 // ==UserScript==
-// @name         Youtube Auto-translate Canceler
-// @namespace    https://github.com/pcouy/YoutubeAutotranslateCanceler/
-// @version      0.4
-// @description  Remove auto-translated youtube titles
-// @author       Pierre Couy
-// @match        https://www.youtube.com/*
+// @name         YouTube Stop Translating
+// @namespace    https://gitlab.com/JeffReeves/youtube-stop-translating/
+// @version      0.5
+// @description  Stops YouTube from auto-translating video titles
+// @author       Pierre Couy, Jeff Reeves
+// @match        https://*youtube.com/*
 // @grant        GM.setValue
 // @grant        GM.getValue
 // @grant        GM.deleteValue

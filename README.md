@@ -2,11 +2,22 @@
 
 A userscript (Tampermonkey / Greasemonkey) that stops YouTube from translating video titles in foreign languages into your native language. 
 
-For example, Japanese video titles do not autotranslate to English.
+![YouTube Stop Translating](assets/YouTube-Stop-Translating.png)
+
+
+
+## Example
+
+Japanese video titles will no longer translate to Google Translated "English":
+
+![Engrish](assets/Engrish.png)
+
+![Japanese](assets/Nihongo.png)
+
+
+## Credit
 
 Forked from [pcouy's "YouTubeAutotranslateCanceler"](https://github.com/pcouy/YoutubeAutotranslateCanceler) under the MIT license.
-
-![YouTube Stop Translating](assets/YouTube-Stop-Translating.png)
 
 
 ## From Original README

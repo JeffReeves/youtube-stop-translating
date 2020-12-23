@@ -1,9 +1,26 @@
+# Important Note
+
+As an alternative to this script, you can try setting 
+**"OTHER LANGUAGES YOU UNDERSTAND"** within Google's My Account settings here:<br>
+[Google - My Account - Languages](https://myaccount.google.com/language?pli=1)
+
+<img src="assets/Google-Account-Languages.png" width="463" height="398">
+
+Once you do that, you must either:
+
+1. Wait for your browser's cache to clear naturally (about 1 - 48 hours).
+
+2. Clear your browser's cache manually. 
+
+Video titles and descriptions in the languages you have 
+selected should no longer be automatically translated on YouTube afterwards.
+
+
 # YouTube Stop Translating
 
 A userscript (Tampermonkey / Greasemonkey) that stops YouTube from translating video titles in foreign languages into your native language. 
 
 ![YouTube Stop Translating](assets/YouTube-Stop-Translating256.png)
-
 
 
 ## Example

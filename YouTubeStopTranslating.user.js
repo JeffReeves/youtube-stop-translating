@@ -3,8 +3,10 @@
 // @namespace    https://gitlab.com/JeffReeves/youtube-stop-translating/
 // @version      0.5
 // @description  Stops YouTube from auto-translating video titles
-// @author       Pierre Couy, Jeff Reeves
-// @match        https://*youtube.com/*
+// @author       Pierre Couy, Bertaz, Jeff Reeves
+// @match        https://www.youtube.com/*
+// @match        https://youtube.com/*
+// @match        https://youtu.be/*
 // @grant        GM.setValue
 // @grant        GM.getValue
 // @grant        GM.deleteValue
@@ -80,6 +82,12 @@
 
         // REFERENCED VIDEO TITLES - find video link elements in the page that have not yet been changed
         var links = Array.prototype.slice.call(document.getElementsByTagName("a")).filter( a => {
+            return a.id == 'video-title'
+            && !a.className.includes("-radio-")
+            && !a.className.includes("-playlist-")
+            && alreadyChanged.indexOf(a) == -1;
+        } );
+      	var home = Array.prototype.slice.call(document.getElementsByTagName("yt-formatted-string")).filter( a => {
             return a.id == 'video-title' && alreadyChanged.indexOf(a) == -1;
         } );
         var spans = Array.prototype.slice.call(document.getElementsByTagName("span")).filter( a => {
@@ -88,7 +96,7 @@
             && !a.className.includes("-playlist-")
             && alreadyChanged.indexOf(a) == -1;
         } );
-        links = links.concat(spans).slice(0,30);
+        links = links.concat(home, spans).slice(0,30);
 
          // MAIN VIDEO DESCRIPTION - request to load original video description
         var mainVidID = "";
@@ -204,4 +212,3 @@
     // DOM listener would be good if it was not for the fact that Youtube changes its DOM frequently
     setInterval(changeTitles, 1000);
 })();
-
